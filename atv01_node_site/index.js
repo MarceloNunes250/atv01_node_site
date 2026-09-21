@@ -45,6 +45,13 @@ app.get("/integrantes", (req, res) => {
       nasc: "25/02/1943",
       funcao: "Guitarrista e compositor",
     },
+{
+      foto: "/images/Integrantes/Pete.jpg",
+      nome: "Pete Best",
+      instrumento: "Bateria/",
+      nasc: "07/07/1940",
+      funcao: "Baterista/ Antes de ser substituido",
+    },
     {
       foto: "/images/Integrantes/Ringo.jpg",
       nome: "Ringo Starr",
