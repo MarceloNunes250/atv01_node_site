@@ -1,0 +1,28 @@
+   <%- include ('partials/header.ejs') %>
+  <%- include ('partials/navbar.ejs') %>
+    <link rel="stylesheet" href="./css/albuns.css">
+<main> 
+ 
+        <div class="header-pagina">
+            <h1>Discografia Principal</h1>
+            <p>Conheça os álbuns mais icónicos que transformaram a história da música mundial.</p>
+        </div>
+
+        <div class="quadros-grid">
+            <% albuns.forEach(function(disco) { %>
+                <div class="quadro-card">
+                    <img src="<%= disco.capa %>" alt="<%= disco.nome %>">
+                    <h3><%= disco.nome %></h3>
+                    <p><strong>Lançamento:</strong> <%= disco.ano %></p>
+                    <p><strong>Gravadora:</strong> <%= disco.gravadora %></p>
+                    <p><strong>Faixas:</strong> <%= disco.faixas %> músicas</p>
+                    <p class="importancia-texto"><strong>Importância:</strong> <%= disco.importancia %></p>
+                </div>
+            <% }); %>
+        </div>
+    </main>
+
+
+
+<!-- Importando o Rodapé -->
+    <%- include ('partials/footer.ejs') %>

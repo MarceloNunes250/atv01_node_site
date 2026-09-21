@@ -1,0 +1,37 @@
+<!-- Importando o cabeçalho -->
+
+<%- include ('partials/header.ejs') %>
+<!-- Importando a navbar -->
+<%- include ('partials/navbar.ejs') %>
+ <link rel="stylesheet" href="./css/inicio.css">
+<section class="hero-banner">
+  <div class="hero-conteudo">
+    <h1>THE BEATLES</h1>
+    <h2>A Maior Banda de Rock da História</h2>
+    <p>Explore a trajetória, os integrantes icónicos e a discografia que revolucionou a música mundial.</p>
+  </div>
+</section>
+
+<main>
+  <section class="secao-destaques">
+    <div class="destaque-card">
+      <h3>👥 Os Integrantes</h3>
+      <p>John, Paul, George e Ringo. Descubra as funções e instrumentos do quarteto de Liverpool.</p>
+      <a href="/integrantes" class="btn-destaque">Ver Integrantes</a>
+    </div>
+
+    <div class="destaque-card">
+      <h3>📜 A História</h3>
+      <p>Do Cavern Club ao Show no Telhado, acompanhe a linha do tempo dos momentos marcantes.</p>
+      <a href="/banda" class="btn-destaque">Ver Linha do Tempo</a>
+    </div>
+
+    <div class="destaque-card">
+      <h3>🎵 Discografia</h3>
+      <p>Conheça os álbuns mais importantes que mudaram os rumos da produção musical.</p>
+      <a href="/albuns" class="btn-destaque">Ver Álbuns</a>
+    </div>
+  </section>
+</main>
+<!-- Importando o Rodapé -->
+<%- include ('partials/footer.ejs') %>

@@ -1,0 +1,24 @@
+   <%- include ('partials/header.ejs') %>
+  <%- include ('partials/navbar.ejs') %>
+       <link rel="stylesheet" href="./css/integrantes.css">
+  <main>
+        <h1>Integrantes</h1>
+        <p>Conheça os membros da banda e suas funções.</p>
+
+        <div class="quadros-grid">
+            <% integrantes.forEach(function(membro) { %>
+                <div class="quadro-card">
+                    <img src="<%= membro.foto %>" alt="<%= membro.nome %>">
+                    <h3><%= membro.nome %></h3>
+                    <p><strong>Instrumento:</strong> <%= membro.instrumento %></p>
+                    <p><strong>Nascimento:</strong> <%= membro.nasc %></p>
+                    <p><strong>Função:</strong> <%= membro.funcao %></p>
+                </div>
+            <% }); %>
+        </div>
+    </main>
+
+    <!-- 3. Footer fora do main (ocupa 100% da largura) -->
+    <%- include('partials/footer') %>
+
+</body>
